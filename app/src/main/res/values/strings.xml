@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TPDM_U1_Practica1_DeLaRosaGabriela</string>
+    <string-array name="animales">
+        <item>Perro</item>
+        <item>Camaleon</item>
+        <item>Vaca</item>
+        <item>Gato</item>
+        <item>Gallina</item>
+    </string-array>
+</resources>

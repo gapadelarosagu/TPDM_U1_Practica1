@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#FEF9E7"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VETERINARIA"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:id="@+id/titulo"
+        android:paddingBottom="15dp"
+        android:gravity="center_horizontal"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/perro"
+        android:layout_below="@id/titulo"
+        android:id="@+id/perro"
+        android:paddingLeft="35dp"
+        android:paddingBottom="30dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gato"
+        android:layout_below="@id/titulo"
+        android:layout_toRightOf="@id/perro"
+        android:paddingLeft="5dp"
+        android:paddingBottom="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Elige tu mascota:  "
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:id="@+id/texto"
+        android:layout_below="@id/perro"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/animales"
+        android:layout_below="@id/texto"
+        android:id="@+id/seleccion"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre de la mascota"
+        android:id="@+id/nombre"
+        android:layout_below="@id/seleccion"
+        android:layout_marginTop="10dp"
+        android:onClick="mensajeBoton"
+        />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No soy un robot"
+        android:layout_below="@id/nombre"
+        android:id="@+id/casilla"
+        android:padding="10dp"
+        android:onClick="seleccion"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seleccionar"
+        android:layout_below="@id/nombre"
+        android:layout_marginTop="40dp"
+        android:background="#F5CBA7"
+        android:id="@+id/boton"
+        android:onClick="mensajeBoton"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/boton"
+        android:paddingTop="20dp"
+        android:text="La cita de tu @ es el 12 de Febrero"
+        android:textSize="15dp"
+        android:id="@+id/etiqueta"
+        android:onClick="mensajeBoton"
+
+        />
+
+</RelativeLayout>
